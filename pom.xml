@@ -7,6 +7,14 @@
   </parent>
   <groupId>com.test.service.module.two</groupId>
   <artifactId>module-two</artifactId>
-  <version>1.0.0</version>
-  <name>First child module</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>Second child module</name>
+  <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.test.service.module.one</groupId>
+				<artifactId>module-one</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
