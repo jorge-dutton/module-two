@@ -1,19 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.test.service</groupId>
-    <artifactId>test-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-  </parent>
-  <groupId>com.test.service.module.two</groupId>
-  <artifactId>module-two</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <name>Second child module</name>
-  <dependencyManagement>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.test.service</groupId>
+		<artifactId>test-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>com.test.service.module.two</groupId>
+	<artifactId>module-two</artifactId>
+	<version>1.0.0</version>
+	<name>Second child module</name>
+	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>com.test.service.module.one</groupId>
-				<artifactId>module-one</artifactId>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>2.4</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.sonatype.mavenbook.multi</groupId>
+				<artifactId>simple-weather</artifactId>
+				<version>1.0</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
