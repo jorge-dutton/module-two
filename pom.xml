@@ -9,10 +9,9 @@
 		<version>1.0.0</version>
 	</parent>
 	
-	
 	<artifactId>module-two</artifactId>
-	
-	<version>1.0.4</version>
+
+	<version>1.0.5-SNAPSHOT</version>
 	
 	<name>Second child module</name>
 	
@@ -31,7 +30,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+	<!--
 	<distributionManagement>
 		<repository>
 			<id>libs-release-local</id>
@@ -44,4 +43,5 @@
 			<url>http://gateway.docker.internal:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
+	-->
 </project>
