@@ -11,7 +11,7 @@
 	
 	<artifactId>module-two</artifactId>
 
-	<version>1.0.5-SNAPSHOT</version>
+	<version>1.0.5</version>
 	
 	<name>Second child module</name>
 	
