@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>com.test.service</groupId>
 		<artifactId>test-parent</artifactId>
-		<version>1.0.12</version>
+		<version>1.0.0</version>
 	</parent>
 	
 	<artifactId>module-two</artifactId>
 
-	<version>1.0.16-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	
 	<name>Second child module</name>
 	
